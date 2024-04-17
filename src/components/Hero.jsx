@@ -23,7 +23,7 @@ const Hero = () => {
             loop
           />
         </div>
-        <p className='md:text-2xl text-xl font-bold text-gray-500'>Monitor your data analytics to increase revenue for BTB, BTC, & SASS platforms.</p>
+        <p className='md:text-2xl text-xl font-bold text-gray-500 uppercase'>your premier destination for cutting-edge mULTIPLAYER virtual reality gAMES & experiences in cHANDIGARH TRICITY.</p>
         <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
       </div>
     </div>
