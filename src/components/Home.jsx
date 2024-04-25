@@ -21,7 +21,7 @@ const Home = () => {
        <Cardjs />
       <Cards />
       
-       <Footer />
+       <Footer navigate= {nav} />
   </>
   )
 }

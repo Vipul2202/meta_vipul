@@ -1,5 +1,6 @@
-import React from "react";
+import React,{useState} from "react";
 import hrry from "../assets/hrry.png";
+import { useNavigate } from 'react-router-dom';
 import {
   FaDribbbleSquare,
   FaFacebookSquare,
@@ -10,7 +11,8 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({navigate}) => {
+  const [nav, setNav] = useState(false);
   return (
     <div className="bg-gradient-to-r from-blue-400 to-green-500 rounded-xl rounded-b-none mx-auto  px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
       <div className="text-black">
@@ -47,11 +49,11 @@ const Footer = () => {
         <div>
           <h6 className="font-bold text-black">QUICK LINKS</h6>
           <ul className="font-semibold">
-           <a href="#home"><li className="py-2 text-sm">HOME</li></a> 
-          <a href="#companyi"><li className="py-2 text-sm">About</li></a>  
-          <a href="#review"> <li className="py-2 text-sm">REVIEW</li></a>  
-          <a href="#about"> <li className="py-2 text-sm">VR Gaming</li></a>  
-          <a href=""> <li className="py-2 text-sm">Contact</li></a>  
+          <a href="#home"><li onClick={() => navigate('/#home')} className='p-4'>Home</li></a>
+        <a href='#companyi'><li onClick={() => navigate("/#companyi")} className='p-4'>About</li></a>
+        <a href='#review'><li className='p-4' onClick={() => navigate('/#review')}>Reviews</li></a>
+        <a href='#about'><li className='p-4' onClick={() => navigate('/#about')}>VR Gaming</li></a>
+        <li className='p-4' onClick={() => navigate('/')}>Contact</li>
           </ul>
         </div>
         <div>

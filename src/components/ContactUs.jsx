@@ -237,7 +237,7 @@ const ContactUs = () => {
         </div>
 
       </div>
-      <Footer />
+      <Footer navigate={nav}  />
     </>
   );
 };

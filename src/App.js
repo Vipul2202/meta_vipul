@@ -25,6 +25,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/contact' element={<ContactUs/>}/>
+        <Route path='/footer' element={<footer/>}/>
       </Routes>
     </Router>
   );
