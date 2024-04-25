@@ -55,7 +55,7 @@ const Hero = () => {
   };
 
   return (
-    <div className='text-white ' style={{ backgroundImage: `url(${abc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div id='home' className='text-white ' style={{ backgroundImage: `url(${abc})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
    
       <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
 

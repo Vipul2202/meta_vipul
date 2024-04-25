@@ -29,11 +29,11 @@ const Cards = () => {
 
   return (
     <div className='container  p-2mx-auto py-8' style={{ backgroundImage: `url(${vir})` }}> {/* Apply background image */}
-      <p className='text-center font-bold text-4xl mb-8 bg-gradient-to-b from-purple-900 to-red-400 text-transparent bg-clip-text'>TEAM  UNITE :  VIRTUAL  LAND</p>
+      <p className='text-center font-bold text-4xl mb-8 bg-gradient-to-b from-purple-900 to-red-400 text-transparent bg-clip-text '>TEAM  UNITE :  VIRTUAL  LAND</p>
       <div className='flex flex-wrap gap-4 justify-center mt-2'>
         {/* Map over the eventsData array */}
         {eventsData.map((event) => (
-          <a key={event.id} href="#" className="w-full sm:w-64 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 rainbow">
+          <a key={event.id} href="#" className="w-full sm:w-64 bg-blue-900 border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 rainbow">
             <div className='p-4'>
               <p className='text-green-400 text-2xl mb-2'>{event.date}</p>
               <p className='text-gray-800'>{event.title}</p>

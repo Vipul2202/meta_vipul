@@ -20,7 +20,7 @@ const Navbar = ({navigate}) => {
       <div className='mt-2'>
 <img className='h-auto w-44 ' src={new_log} alt='logo' />
 </div>
-      <ul className='hidden md:flex font-bold text-xl'>
+      <ul className='hidden md:flex font-bold text-xl bg-gray-500 rounded-md'>
         <li onClick={()=>navigate('/')} className='p-4'>Home</li>
        <a href='#companyi'><li onClick={()=>navigate("/#companyi")} className='p-4'>About</li></a> 
        <a href='#review'><li className='p-4' onClick={()=>navigate('/#review')}>Reviews</li></a> 

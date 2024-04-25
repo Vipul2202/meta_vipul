@@ -46,11 +46,12 @@ const Footer = () => {
       <div className="lg:col-span-2 flex justify-between mt-6 text-black">
         <div>
           <h6 className="font-bold text-black">QUICK LINKS</h6>
-          <ul>
-            <li className="py-2 text-sm">HOME</li>
-            <li className="py-2 text-sm">CONTACT</li>
-            <li className="py-2 text-sm">REVIEW</li>
-            <li className="py-2 text-sm">Insights</li>
+          <ul className="font-semibold">
+           <a href="#home"><li className="py-2 text-sm">HOME</li></a> 
+          <a href="#companyi"><li className="py-2 text-sm">About</li></a>  
+          <a href="#review"> <li className="py-2 text-sm">REVIEW</li></a>  
+          <a href="#about"> <li className="py-2 text-sm">VR Gaming</li></a>  
+          <a href=""> <li className="py-2 text-sm">Contact</li></a>  
           </ul>
         </div>
         <div>
