@@ -1,48 +1,48 @@
 import React from 'react';
-import Single from '../assets/single.png'
-import Double from '../assets/double.png'
-import Triple from '../assets/triple.png'
+import vir from "../assets/vir.jpg"; // Import your background image
+import './Cards.css';
 
 const Cards = () => {
+  // Define an array of objects for card data
+  const eventsData = [
+    {
+      id: 1,
+      date: 'FEEL  THE  TEAMWORK ',
+      title: 'By stepping into the different reality, bring your friends and fight the zombies or defeat the opponent squad with the feel of cutting-edge gaming experience.',
+    },
+    {
+      id: 2,
+      date: 'SAFE  ZONE',
+      title: 'Feel free to play in the smoke-free area zone where no smoking or drinking is allowed',
+    },
+    {
+      id: 3,
+      date: 'FAMILY  JOY ',
+      title: 'Bring your family to our virtual land to aboard the next level experience with our family-friendly virtual games.',
+    },
+    {
+      id: 4,
+      date: 'AGE  FRIENDLY  MODE',
+      title: 'We include console gaming also like Sony PS5 which offers the 4k gaming through a big screen by having a pvp mode available.',
+    },
+  ];
+
   return (
-    <div className='w-full py-[10rem] px-4 bg-white'>
-      <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
-          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-              <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Single} alt="/" />
-              <h2 className='text-2xl font-bold text-center py-8'>Single User</h2>
-              <p className='text-center text-4xl font-bold'>$149</p>
-              <div className='text-center font-medium'>
-                  <p className='py-2 border-b mx-8 mt-8'>500 GB Storage</p>
-                  <p className='py-2 border-b mx-8'>1 Granted User</p>
-                  <p className='py-2 border-b mx-8'>Send up to 2 GB</p>
-              </div>
-              <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start Trial</button>
-          </div>
-          <div className='w-full shadow-xl bg-gray-100 flex flex-col p-4 md:my-0 my-8 rounded-lg hover:scale-105 duration-300'>
-              <img className='w-20 mx-auto mt-[-3rem] bg-transparent' src={Double} alt="/" />
-              <h2 className='text-2xl font-bold text-center py-8'>Single User</h2>
-              <p className='text-center text-4xl font-bold'>$149</p>
-              <div className='text-center font-medium'>
-                  <p className='py-2 border-b mx-8 mt-8'>500 GB Storage</p>
-                  <p className='py-2 border-b mx-8'>1 Granted User</p>
-                  <p className='py-2 border-b mx-8'>Send up to 2 GB</p>
-              </div>
-              <button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start Trial</button>
-          </div>
-          <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
-              <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Triple} alt="/" />
-              <h2 className='text-2xl font-bold text-center py-8'>Single User</h2>
-              <p className='text-center text-4xl font-bold'>$149</p>
-              <div className='text-center font-medium'>
-                  <p className='py-2 border-b mx-8 mt-8'>500 GB Storage</p>
-                  <p className='py-2 border-b mx-8'>1 Granted User</p>
-                  <p className='py-2 border-b mx-8'>Send up to 2 GB</p>
-              </div>
-              <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start Trial</button>
-          </div>
+    <div className='container  p-2mx-auto py-8' style={{ backgroundImage: `url(${vir})` }}> {/* Apply background image */}
+      <p className='text-center font-bold text-4xl mb-8 bg-gradient-to-b from-purple-900 to-red-400 text-transparent bg-clip-text'>TEAM  UNITE :  VIRTUAL  LAND</p>
+      <div className='flex flex-wrap gap-4 justify-center mt-2'>
+        {/* Map over the eventsData array */}
+        {eventsData.map((event) => (
+          <a key={event.id} href="#" className="w-full sm:w-64 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 rainbow">
+            <div className='p-4'>
+              <p className='text-green-400 text-2xl mb-2'>{event.date}</p>
+              <p className='text-gray-800'>{event.title}</p>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   );
-};
+}
 
 export default Cards;

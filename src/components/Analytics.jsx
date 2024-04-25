@@ -1,17 +1,20 @@
 import React from 'react';
 import v from '../assets/v.png';
 import j from '../assets/j.png';
+import pcte from "../assets/pcte.jpg";
 
 const Analytics = () => {
   return (
-    <div className='bg-white py-16 px-4 md:px-0' style={{ backgroundImage: `url(${j})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div id='companyi' className='bg-white py-8 px-2 md:px-0' style={{ backgroundImage: `url(${pcte})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className='flex justify-center'>
+        <p className='flex text-5xl font-bold text-black'>About Us</p>
+      </div>
       <div className='max-w-screen-xl mx-auto md:grid md:grid-cols-2 md:gap-8 items-center'>
         <img className='w-full md:w-[500px] mx-auto my-4 rounded-3xl' src={v} alt='/' />
         <div className='text-center md:text-left'>
-          <p className='text-[#00df9a] font-bold text-3xl mb-4 md:mb-2'>MULTIPLAYER VR GAMES & EXPERIENCES</p>
-          <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 text-white italic '>Dive into a realm of endless excitement with 30+ MULTIPLAYER VR ARCADE GAMES and EXPERIENCES. With new content consistently added, every visit unveils a new adventure waiting to be explored!</h1>
-          
-          <button className='bg-black text-[#00df9a] w-full md:w-[200px] rounded-md font-medium my-6 md:my-0 py-3 mx-auto md:mx-0'>Get Started</button>
+          <div className="bg-gradient-to-r from-purple-700 to-black bg-opacity-70 rounded-lg p-6 mt-4">
+            <h1 className='md:text-2xl sm:text-2xl text-xl font-semibold py-2 text-white font-serif'>Step into our VR gaming hub, your premier destination for immersive virtual experiences! Explore a world where excitement meets innovation, as we offer top-notch virtual reality adventures to gamers of all skill levels. Whether you’re an experienced player or a newcomer, our handpicked collection of games and experiences ensures unparalleled immersion and enjoyment. Come join us on an exciting journey into the forefront of gaming!</h1>
+          </div>
         </div>
       </div>
     </div>
