@@ -49,6 +49,9 @@ const Cardjs = () => {
           <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Be ready to experience the deep adventure by feeling the true detail of the way and enjoying the one of the best storyline. 
 </p>
 <img className='h-24 w-24 text-white' src={vtttt} alt='logo' />
+
+
+
         </div>
       </div>
       <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
